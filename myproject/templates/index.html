@@ -3,7 +3,7 @@
 </h1> {% endcomment %} 
 
 <h1> Input the Words Below : </h1>
-<form method = 'POST' action = "counter"> 
+<form method = 'GET' action = "counter/"> 
     {% csrf_token %}
     <textarea name = "text" rows = "25" cols = "100"></textarea> <br>
     <input type = "submit"/>
@@ -14,4 +14,4 @@
 
 <link rel ="stylesheet" href ="{% static 'style.css' %}">
 
-<h1>Hey there i'm learning Django</h1>
+{% comment %} <h1>Hey there i'm learning Django</h1> {% endcomment %}
